@@ -1,7 +1,3 @@
-<script>
-	import successkid from 'images/successkid.jpg';
-</script>
-
 <style>
 	h1, figure, p {
 		text-align: center;
@@ -15,18 +11,23 @@
 		margin: 0 0 0.5em 0;
 	}
 
-	figure {
-		margin: 0 0 1em 0;
-	}
-
 	img {
 		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
+		max-width: 300px;
+	}
+
+	.image-logo {
+		max-width: 100px;
+	}
+
+	.logos {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
 	}
 
 	p {
-		margin: 1em auto;
+		margin: 0 auto;
 	}
 
 	@media (min-width: 480px) {
@@ -37,14 +38,21 @@
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+	<title>Webapp</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<h1>Hello home!</h1>
 
 <figure>
-	<img alt="Success Kid" src="{successkid}">
-	<figcaption>Have fun with Sapper!</figcaption>
+	<div class="logos">
+		<a href="/domoticz">
+			<img class="image-logo" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Domoticz.png">
+		</a>
+		<a href="/bw">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Bitwarden_Logo_Horizontal.png">
+		</a>
+		<a href="https://guillaumejparis.github.io/recipes">
+			<img class="image-logo" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/GNOME_Recipes_logo.png">
+		</a>
+	</div>
 </figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
