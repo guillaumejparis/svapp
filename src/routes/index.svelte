@@ -25,12 +25,10 @@
 <figure>
   <div class="container">
     <div class="logos-couple">
-      <a href="/domoticz" class="logo-left">
-        <img
-          alt="domoticz"
-          src="http://domoticx.com/wp-content/uploads/2018/01/domoticz-logo.png"
-        />
+      <a href="/netdata" class="logo-left">
+        <img alt="netdata" src="https://landscape.cncf.io/logos/netdata.svg" />
       </a>
+
       <a href="/bw" class="logo-right">
         <img
           alt="bitwarden"
@@ -53,8 +51,11 @@
       </a>
     </div>
     <div class="logos-couple">
-      <a href="/netdata" class="logo-left">
-        <img alt="netdata" src="https://landscape.cncf.io/logos/netdata.svg" />
+      <a href="/domoticz" class="logo-left">
+        <img
+          alt="domoticz"
+          src="http://domoticx.com/wp-content/uploads/2018/01/domoticz-logo.png"
+        />
       </a>
       <a href="/plex" class="plex">
         <img
@@ -73,17 +74,18 @@
 </figure>
 
 <style>
-  h1,
   figure {
+    height: calc(100% - 47px - 28px);
     text-align: center;
     margin: 0 auto;
   }
 
   h1 {
+    text-align: center;
+    margin: 0 auto;
     font-size: 2.8em;
     text-transform: uppercase;
     font-weight: 700;
-    margin: 0 0 0.5em 0;
   }
 
   img {
@@ -92,11 +94,11 @@
   }
 
   .container {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
     max-width: 100%;
   }
 
@@ -118,7 +120,7 @@
   .logo-right {
     display: flex;
     margin-left: 25px;
-    height: 100%;
+    max-height: 100%;
     flex: 1;
     justify-self: flex-start;
   }
