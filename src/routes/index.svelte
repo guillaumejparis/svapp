@@ -48,7 +48,7 @@
         <img alt="domoticz" src="domoticz-logo.png" />
       </a>
       <a href="/plex" class="logo logo-right">
-        <img alt="plex" src="plex-logo.png" />
+        <img alt="plex" src="oplex-logo.png" />
       </a>
     </div>
   </div>
