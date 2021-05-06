@@ -25,49 +25,30 @@
 <figure>
   <div class="container">
     <div class="logos-couple">
-      <a href="/netdata" class="logo-left">
-        <img alt="netdata" src="https://landscape.cncf.io/logos/netdata.svg" />
+      <a href="/netdata" class="logo logo-left">
+        <img alt="netdata" src="netdata-logo.png" />
       </a>
-
-      <a href="/bw" class="logo-right">
-        <img
-          alt="bitwarden"
-          src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Bitwarden_Logo_Horizontal.png"
-        />
+      <a href="/bw" class="logo logo-right">
+        <img alt="bitwarden" src="bitwarden-logo.png" />
       </a>
     </div>
     <div class="logos-couple">
-      <a href="https://guillaumejparis.github.io/recipes" class="logo-left">
-        <img
-          alt="recipes"
-          src="https://iconape.com/wp-content/files/aq/167156/svg/bon-appetit-seeklogo.com.svg"
-        />
+      <a
+        href="https://guillaumejparis.github.io/recipes"
+        class="logo logo-left"
+      >
+        <img alt="recipes" src="bon-appetit-logo.png" />
       </a>
-      <a href="/qb" class="logo-right">
-        <img
-          alt="qbittorrent"
-          src="https://upload.wikimedia.org/wikipedia/commons/3/39/BitTorrent_logo.svg"
-        />
+      <a href="/qb" class="logo logo-right">
+        <img alt="qbittorrent" src="qbittorrent-logo.png" />
       </a>
     </div>
     <div class="logos-couple">
-      <a href="/domoticz" class="logo-left">
-        <img
-          alt="domoticz"
-          src="http://domoticx.com/wp-content/uploads/2018/01/domoticz-logo.png"
-        />
+      <a href="/domoticz" class="logo logo-left">
+        <img alt="domoticz" src="domoticz-logo.png" />
       </a>
-      <a href="/plex" class="plex">
-        <img
-          id="plex-logo-img"
-          alt="plex"
-          src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Plex_favicon.png"
-        />
-        <img
-          id="plex-logo-text"
-          alt="plex"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Plex_vector_logo.svg/2880px-Plex_vector_logo.svg.png"
-        />
+      <a href="/plex" class="logo logo-right">
+        <img alt="plex" src="plex-logo.png" />
       </a>
     </div>
   </div>
@@ -89,7 +70,6 @@
   }
 
   img {
-    max-height: 77px;
     max-width: 100%;
   }
 
@@ -105,52 +85,38 @@
   .logos-couple {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0px;
     width: 100%;
   }
 
-  .logo-left {
-    display: flex;
-    margin-right: 25px;
-    height: 100%;
+  .logo {
     flex: 1;
-    justify-content: flex-end;
+    display: flex;
+  }
+
+  .logo-left {
+    margin-right: 5px;
   }
 
   .logo-right {
-    display: flex;
-    margin-left: 25px;
-    max-height: 100%;
-    flex: 1;
-    justify-self: flex-start;
-  }
-
-  .plex {
-    display: flex;
-    margin-left: 25px;
-    flex: 1;
-    justify-self: flex-start;
-    align-items: center;
-  }
-
-  #plex-logo-img {
-    max-height: 62px;
-    max-width: 30%;
-  }
-
-  #plex-logo-text {
-    max-height: 62px;
-    max-width: calc(70% - 10px);
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   @media screen and (min-width: 480px) {
     h1 {
       font-size: 6em;
     }
-    #plex-logo-text {
-      max-width: calc(70% - 30px);
-      margin-left: 30px;
+
+    .logo-left {
+      margin-right: 25px;
+    }
+
+    .logo-right {
+      margin-left: 25px;
+    }
+
+    .logos-couple {
+      padding: 20px;
     }
   }
 </style>
