@@ -2,9 +2,13 @@ FROM node:12-alpine
 
 WORKDIR /app
 
-# copy files and install dependencies
-COPY . ./
-RUN yarn install
-RUN yarn run build
+# install
+COPY package.json /app
+COPY yarn.lock /app
+RUN ["yarn", "install"]
+
+# copy files and build
+COPY . /app
+RUN ["yarn", "build"]
 
 CMD ["yarn", "start"]
