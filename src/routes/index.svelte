@@ -80,26 +80,22 @@
     justify-content: center;
     align-items: center;
     max-width: 100%;
+    margin-top: 30px;
+    padding: 0 25px;
   }
 
   .logos-couple {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 20px 0px;
     width: 100%;
   }
 
   .logo {
     flex: 1;
     display: flex;
-  }
-
-  .logo-left {
-    margin-right: 5px;
-  }
-
-  .logo-right {
-    margin-left: 5px;
+    padding: 22px 0px;
+    min-width: 250px;
   }
 
   @media screen and (min-width: 480px) {
